@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Or Sign UpVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginOrSignUpVC" id="Y6W-OH-hqX" customClass="LoginOrSignUpVC" customModule="TaskFund" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TaskFund" translatesAutoresizingMaskIntoConstraints="NO" id="cG5-Th-oLc">
+                                <rect key="frame" x="82" y="117" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="E89-YB-J1l"/>
+                                    <constraint firstAttribute="height" constant="250" id="uwo-ET-PYk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzE-fO-bsF">
+                                <rect key="frame" x="65.5" y="387" width="283.5" height="24"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Manage Time,">
+                                        <attributes>
+                                            <color key="NSColor" red="0.015686274510000001" green="0.18823529410000001" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="ArialRoundedMTBold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="20" name="ArialRoundedMTBold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Manage Money">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95987862349999997" green="0.38555437329999998" blue="0.033610038459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="ArialRoundedMTBold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1C-eS-cQc">
+                                <rect key="frame" x="40" y="707" width="334" height="60"/>
+                                <color key="backgroundColor" name="Primary Orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="F6M-ME-l9E"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started">
+                                    <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="PrimaryBlue"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F5-g6-630">
+                                <rect key="frame" x="56" y="787" width="302" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="I ALREADY HAVE AN ACCOUNT">
+                                    <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                    <color key="baseForegroundColor" name="PrimaryOrange"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zzE-fO-bsF" firstAttribute="top" secondItem="cG5-Th-oLc" secondAttribute="bottom" constant="20" id="9aY-Qp-XdG"/>
+                            <constraint firstItem="0F5-g6-630" firstAttribute="top" secondItem="C1C-eS-cQc" secondAttribute="bottom" constant="20" id="ARE-aH-ZWx"/>
+                            <constraint firstItem="0F5-g6-630" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="EV6-G6-nDg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0F5-g6-630" secondAttribute="bottom" constant="40" id="HCL-Do-paB"/>
+                            <constraint firstItem="C1C-eS-cQc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Jld-23-CLD"/>
+                            <constraint firstItem="cG5-Th-oLc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="Nt3-9H-lxr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="C1C-eS-cQc" secondAttribute="trailing" constant="40" id="ROY-g6-CWj"/>
+                            <constraint firstItem="zzE-fO-bsF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ccJ-fR-GDV"/>
+                            <constraint firstItem="cG5-Th-oLc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gg2-NH-vWW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gyv-02-dId"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002.2900763358779" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oTJ-66-R0t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="57Y-dD-B4e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f7o-tF-tUM">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="222-31-GPM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5v-Xv-3dy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TaskFund" width="1024" height="1024"/>
+        <namedColor name="Primary Orange">
+            <color red="0.96078431372549022" green="0.3843137254901961" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryBlue">
+            <color red="0.015686274509803921" green="0.18823529411764706" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryOrange">
+            <color red="0.96078431372549022" green="0.3843137254901961" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
