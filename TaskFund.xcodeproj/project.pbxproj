@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36961F0D2BA059EF002ADF94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36961F0C2BA059EF002ADF94 /* Constants.swift */; };
 		36E34B0C2B9F7D9F001763F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E34B0B2B9F7D9F001763F2 /* AppDelegate.swift */; };
 		36E34B0E2B9F7D9F001763F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E34B0D2B9F7D9F001763F2 /* SceneDelegate.swift */; };
 		36E34B102B9F7D9F001763F2 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E34B0F2B9F7D9F001763F2 /* LaunchScreen.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36961F0C2BA059EF002ADF94 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		36E34B082B9F7D9F001763F2 /* TaskFund.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskFund.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E34B0B2B9F7D9F001763F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36E34B0D2B9F7D9F001763F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36961F0B2BA059D3002ADF94 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				36961F0C2BA059EF002ADF94 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		36E34AFF2B9F7D9F001763F2 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		36E34B0A2B9F7D9F001763F2 /* TaskFund */ = {
 			isa = PBXGroup;
 			children = (
+				36961F0B2BA059D3002ADF94 /* Constants */,
 				36EED62A2BA021D700CC7EC9 /* Helper */,
 				36E34B1F2B9F7EFB001763F2 /* LaunchScreen */,
 				36E34B202B9F7FF0001763F2 /* LoginOrSignUP */,
@@ -199,6 +210,7 @@
 				36E34B222B9F8021001763F2 /* LoginOrSignUpVC.swift in Sources */,
 				36E34B0C2B9F7D9F001763F2 /* AppDelegate.swift in Sources */,
 				36E34B0E2B9F7D9F001763F2 /* SceneDelegate.swift in Sources */,
+				36961F0D2BA059EF002ADF94 /* Constants.swift in Sources */,
 				36EED6322BA022D800CC7EC9 /* SignUpVC.swift in Sources */,
 				36EED62E2BA022B200CC7EC9 /* LoginVC.swift in Sources */,
 			);
