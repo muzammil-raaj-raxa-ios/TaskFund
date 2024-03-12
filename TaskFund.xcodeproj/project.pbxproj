@@ -14,6 +14,10 @@
 		36E34B152B9F7DA1001763F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E34B142B9F7DA1001763F2 /* Assets.xcassets */; };
 		36E34B222B9F8021001763F2 /* LoginOrSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E34B212B9F8021001763F2 /* LoginOrSignUpVC.swift */; };
 		36E34B242B9F803B001763F2 /* LoginOrSignUpVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E34B232B9F803B001763F2 /* LoginOrSignUpVC.storyboard */; };
+		36EED62E2BA022B200CC7EC9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EED62D2BA022B200CC7EC9 /* LoginVC.swift */; };
+		36EED6302BA022C800CC7EC9 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EED62F2BA022C800CC7EC9 /* LoginVC.storyboard */; };
+		36EED6322BA022D800CC7EC9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EED6312BA022D800CC7EC9 /* SignUpVC.swift */; };
+		36EED6342BA022E300CC7EC9 /* SignUpVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EED6332BA022E300CC7EC9 /* SignUpVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		36E34B192B9F7DA1001763F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E34B212B9F8021001763F2 /* LoginOrSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpVC.swift; sourceTree = "<group>"; };
 		36E34B232B9F803B001763F2 /* LoginOrSignUpVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginOrSignUpVC.storyboard; sourceTree = "<group>"; };
+		36EED62D2BA022B200CC7EC9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		36EED62F2BA022C800CC7EC9 /* LoginVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
+		36EED6312BA022D800CC7EC9 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		36EED6332BA022E300CC7EC9 /* SignUpVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,11 @@
 		36E34B0A2B9F7D9F001763F2 /* TaskFund */ = {
 			isa = PBXGroup;
 			children = (
-				36E34B0B2B9F7D9F001763F2 /* AppDelegate.swift */,
-				36E34B0D2B9F7D9F001763F2 /* SceneDelegate.swift */,
+				36EED62A2BA021D700CC7EC9 /* Helper */,
 				36E34B1F2B9F7EFB001763F2 /* LaunchScreen */,
 				36E34B202B9F7FF0001763F2 /* LoginOrSignUP */,
+				36EED62B2BA021EB00CC7EC9 /* Login */,
+				36EED62C2BA021F000CC7EC9 /* SignUp */,
 				36E34B142B9F7DA1001763F2 /* Assets.xcassets */,
 				36E34B192B9F7DA1001763F2 /* Info.plist */,
 			);
@@ -84,6 +93,33 @@
 				36E34B232B9F803B001763F2 /* LoginOrSignUpVC.storyboard */,
 			);
 			path = LoginOrSignUP;
+			sourceTree = "<group>";
+		};
+		36EED62A2BA021D700CC7EC9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				36E34B0B2B9F7D9F001763F2 /* AppDelegate.swift */,
+				36E34B0D2B9F7D9F001763F2 /* SceneDelegate.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		36EED62B2BA021EB00CC7EC9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				36EED62D2BA022B200CC7EC9 /* LoginVC.swift */,
+				36EED62F2BA022C800CC7EC9 /* LoginVC.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		36EED62C2BA021F000CC7EC9 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				36EED6312BA022D800CC7EC9 /* SignUpVC.swift */,
+				36EED6332BA022E300CC7EC9 /* SignUpVC.storyboard */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +180,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EED6342BA022E300CC7EC9 /* SignUpVC.storyboard in Resources */,
 				36E34B152B9F7DA1001763F2 /* Assets.xcassets in Resources */,
 				36E34B242B9F803B001763F2 /* LoginOrSignUpVC.storyboard in Resources */,
 				36E34B132B9F7D9F001763F2 /* Base in Resources */,
+				36EED6302BA022C800CC7EC9 /* LoginVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +199,8 @@
 				36E34B222B9F8021001763F2 /* LoginOrSignUpVC.swift in Sources */,
 				36E34B0C2B9F7D9F001763F2 /* AppDelegate.swift in Sources */,
 				36E34B0E2B9F7D9F001763F2 /* SceneDelegate.swift in Sources */,
+				36EED6322BA022D800CC7EC9 /* SignUpVC.swift in Sources */,
+				36EED62E2BA022B200CC7EC9 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
