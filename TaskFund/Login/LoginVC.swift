@@ -24,4 +24,10 @@ class LoginVC: UIViewController {
     self.navigationController?.popViewController(animated: true)
   }
   
+  @IBAction func goToSignUpVC(_ sender: UIButton) {
+    let storyboard = UIStoryboard(name: "SignUpVC", bundle: .main)
+    if let vc = storyboard.instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC {
+      self.navigationController?.pushViewController(vc, animated: true)
+    }
+  }
 }
